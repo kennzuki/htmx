@@ -1,21 +1,28 @@
-const createHomepageTemplate = () => /*html*/ `
-<html>
+const createHomepageTemplate = () => /*html*/`
+  <!DOCTYPE html>
+  <html>
     <head>
-        <title>My reading list</title>
-        <script src="https://unpkg.com/htmx.org@2.0.1" integrity="sha384-QWGpdj554B4ETpJJC9z+ZHJcA/i59TyjxEPXiiUgN2WmTyV5OEZWCD6gQhgkdpB/" crossorigin="anonymous"></script>
+      <title>My Reading List</title>
+      <script src="https://unpkg.com/htmx.org@1.9.12"></script>
+      <link rel="stylesheet" href="/styles.css">
     </head>
     <body>
-        <header>my reading list</header>
-        <main>
-            <div>
-                <!-- booklist here -->
-            </div>
-            <div>
-                <h2>what do you want to read</h2>
-                <!-- booklist -->
-            </div>
-        </main>
+      <header>
+        <h1>My Reading List</h1>
+      </header>
+
+      <main>
+        <div class="book-list">
+          <!-- book list here later -->
+        </div>
+
+        <div class="add-book-form">
+          <h2>What do you want to read?</h2>
+          <!-- form template here later -->
+        </div>
+      </main>
     </body>
-</html>
+  </html>
 `;
-export default createHomepageTemplate
+
+export default createHomepageTemplate;

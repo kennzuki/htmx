@@ -1,5 +1,6 @@
 import express from 'express';
 import createHomepageTemplate from './views/index.js';
+import createListTemplate from './views/index.js';
 
 // create app
 const app = express();

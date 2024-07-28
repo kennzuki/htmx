@@ -12,6 +12,9 @@ app.use(express.static('public'));
 app.get('/', (req, res) => {
   res.send(createHomepageTemplate());
 });
+app.get('/books', (req, res) => {
+  res.send(createListTemplate());
+});
 
 // listen to port
 app.listen(3000, () => {
